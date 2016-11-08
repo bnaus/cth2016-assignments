@@ -1,9 +1,8 @@
 /*
-    file:   person.js
-    desc:   simple script that matches incoming arguments (--name) 
-            with a simple database
-    author: gauthier
-    date:   03/11/16
+    file:   bookstore.js
+    desc:   simple script that matches incoming arguments with books, authors, prices and kinds
+    author: bramnaus
+    date:   08/11/16
 */
 
 // import 'commander' (https://www.npmjs.com/package/commander)
