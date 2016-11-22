@@ -10,8 +10,9 @@ var server = require('http').Server(app);
 // import socket.io
 var io = require('socket.io')(server);	// npm install --save socket.io
 
-const pattern_1 = ['How do you do?', 'Wazzup?'];
-const pattern_2 = ['Why?', 'No', "ok"];
+const pattern_1 = ["How do you do?", "Whatsup?", "How are you?"];
+const pattern_2 = ["Why?", "How?", "What?"];
+const pattern_3 = ["Who are you?", "How old are you?", "What are you?"];
 
 function matches(msg, array_of_pattern) {
   var msg_lower = msg.toLowerCase();
@@ -29,13 +30,17 @@ function answer(msg)  {
 
   if(matches(msg, pattern_1)) {
 
-    return "Pretty well thank you"
+    return "Very well thank you"
 
   } else if(matches(msg, pattern_2))  {
 
-    return "Oh well, good luck with everyting"
+    return "You tell me."
 
-  } else {
+  } else if(matches(msg, pattern_3))  {
+
+    return "I'm a speaking robot, made by Bram but inspired by Alan Turing. My age is not specified."
+
+   } else {
 
     return "I don't understand...";
 
