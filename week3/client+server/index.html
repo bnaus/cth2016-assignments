@@ -1,24 +1,27 @@
 <html>
 	<head>	
-		<title>TALK TO ME LOCALHOST</title>	
+		<title>BRAM'S ROBOT</title>	
 		<style>
-			/* CSS Styling */
-			#frame {
-				width: 30em;
-			}
-			textarea {
-				width: 100%;
-				border: 1px solid #888;
-				padding: 3px;
-			}
-			#inputs, #text_field {
-				width: 100%;
-			}
+		/* CSS Styling */
+#frame {
+	width: 30em;
+	}
+textarea {
+	width: 100%;
+	border: 1px solid #888;
+	padding: 3px;
+	}
+#inputs, #text_field {
+	width: 100%;
+	}
 		</style>
+
+		<link rel="stylesheet" href="style.css">
+
 	</head>
 	<body>		
 		<!-- HTML -->
-		<label>Talk to me Localhost</label>
+		<label>BRAM'S ROBOT</label>
 		<div id="frame">
 
 			<!-- text area where the conversation is displayed -->
@@ -26,7 +29,7 @@
 
 			<!-- inputs from human to send to server -->
 			<div id="inputs">
-				<label>To Localhost: </label>
+				<label>To Robot: </label>
 				<input id="text_field" type="text" onkeydown="enter_message();"/>
 				<input type="button" value="Send" onclick="send_message();"/>
 			</div>
